@@ -1,2 +1,5 @@
 # IPT_Final_PIT
-Just a student's final project for his subj
+Just a group of student's proj for their subj
+
+We're dying
+
