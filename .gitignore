@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / Django cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local Database Files 
+*.sqlite3
+*.sqlite3-journal
+
+# Environment Secrets & Local Configurations
+.env
+.venv
+env/
+venv/
+ENV/
+*.env.local
+
+# IDE / Editor Configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+Thumbs.db
+db.json
+EHthumbs.db
+Desktop.ini
+.DS_Store
