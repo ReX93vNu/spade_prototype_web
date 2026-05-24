@@ -10,6 +10,41 @@ class IngestReadingView(APIView):
     # Enforce token security. Unauthenticated requests get rejected with 401 Unauthorized.
     permission_classes = [IsAuthenticated]
 
+    # get for frontend
+    def get(self, request):
+        try:
+            # Fetch all logs tied to the logged-in user, ordered by newest first
+            logs = FertilizerLog.objects.filter(user=request.user).order_by('-timestamp')
+            
+            # Map the database records into a clean JSON array structure matching your Postman/WebSocket payloads
+            historical_data = []
+            for log in logs:
+                historical_data.append({
+                    "id": log.id,
+                    "event_type": "historical_log_entry",
+                    "assigned_to": log.user.username,
+                    "timestamp": log.timestamp.isoformat(),
+                    "fertilizer_type": log.fertilizer_type,
+                    "ph_level": log.ph_level,
+                    "nitrogen_val": log.nitrogen_val,
+                    "phosphorus_val": log.phosphorus_val,
+                    "potassium_val": log.potassium_val,
+                    "condition_status": log.condition_status
+                })
+                
+            return Response({
+                "status": "Success",
+                "total_records": len(historical_data),
+                "data": historical_data
+            }, status=status.HTTP_200_OK)
+            
+        except Exception as e:
+            return Response({
+                "status": "Server Error", 
+                "error": f"Failed to retrieve data: {str(e)}"
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    # post for the incoming payloads of records
     def post(self, request):
         data = request.data
         authenticated_user = request.user
