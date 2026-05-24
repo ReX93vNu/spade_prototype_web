@@ -1,0 +1,8 @@
+asgiref
+channels
+daphne
+Django
+django-environ
+djangorestframework
+djangorestframework-simplejwt
+requests
