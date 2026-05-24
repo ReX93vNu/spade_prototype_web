@@ -1,11 +1,15 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import FertilizerLog, User
+from rest_framework.permissions import IsAuthenticated  
+from .models import FertilizerLog
 from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
 
 class IngestReadingView(APIView):
+    # Enforce token security. Unauthenticated requests get rejected with 401 Unauthorized.
+    permission_classes = [IsAuthenticated]
+
     def post(self, request):
         data = request.data
         event_type = data.get("event_type")
@@ -15,17 +19,12 @@ class IngestReadingView(APIView):
         
         if event_type == "sensor_log":
             try:
-                #  Reads the  user_id the ESP32 is sending
-                user_id = data.get("user_id")
-                if not user_id:
-                    return Response({"status": "Rejected", "error": "Missing user_id parameter from device payload."}, status=status.HTTP_400_BAD_REQUEST)
-                
-                # Verifies if the user exists 
-                user = User.objects.get(id=user_id)
+                # DYNAMIC & SECURE: Extracted directly from the encrypted JWT token signature
+                authenticated_user = request.user
 
-                # Saves the entry as a log to that user
+                # Saves the entry as a log assigned directly to this token-verified user account
                 log = FertilizerLog.objects.create(
-                    user=user,
+                    user=authenticated_user,
                     fertilizer_type=data.get("fertilizer_type", "Hardware Node Reading"),
                     ph_level=float(data.get("ph_level")),
                     nitrogen_val=float(data.get("nitrogen_val")),
@@ -36,6 +35,7 @@ class IngestReadingView(APIView):
                 payload = {
                     "id": log.id,
                     "event_type": "new_log_entry",
+                    "assigned_to": authenticated_user.username,
                     "timestamp": log.timestamp.isoformat(),
                     "ph_level": log.ph_level,
                     "nitrogen_val": log.nitrogen_val,
@@ -44,12 +44,12 @@ class IngestReadingView(APIView):
                     "condition_status": log.condition_status
                 }
 
-                # Targets only this specific user's  websocket group
-                target_group = f"user_{user_id}_updates"
+                # Targets only this specific user's private WebSocket group channel
+                target_group = f"user_{authenticated_user.id}_updates"
                 
                 channel_layer = get_channel_layer()
                 async_to_sync(channel_layer.group_send)(
-                    target_group, # Sends only to "user_1_updates", "user_2_updates", etc.
+                    target_group,
                     {
                         "type": "send_live_reading",
                         "data": payload
@@ -58,8 +58,6 @@ class IngestReadingView(APIView):
 
                 return Response({"status": "Logged Successfully", "data": payload}, status=status.HTTP_201_CREATED)
             
-            except User.DoesNotExist:
-                return Response({"status": "Data Error", "error": f"User ID {user_id} does not exist in backend database."}, status=status.HTTP_400_BAD_REQUEST)
             except (ValueError, TypeError) as e:
                 return Response({"status": "Data Error", "error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
