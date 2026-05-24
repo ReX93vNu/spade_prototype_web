@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.hashers import make_password  # django's PBKDF2 hashing tool
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
@@ -13,6 +14,14 @@ class User(AbstractUser):
         related_name='spade_user_permissions_set',
         blank=True
     )
+
+    def save(self, *args, **kwargs):
+        # encrypts passwords before committing to the DB
+        if self.password and not self.password.startswith(('pbkdf2_sha256$', 'bcrypt$', 'argon2$')):
+            self.password = make_password(self.password)
+        
+        super().save(*args, **kwargs)
+
 
 class FertilizerLog(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='fertilizer_logs')

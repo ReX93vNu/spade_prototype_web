@@ -165,4 +165,4 @@ SIMPLE_JWT = {
 }
 
 # to use the core app's custom user model everywhere
-# AUTH_USER_MODEL = 'core.User'
+AUTH_USER_MODEL = 'core.User'
