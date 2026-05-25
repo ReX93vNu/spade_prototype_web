@@ -20,6 +20,6 @@ Running the frontend server:
 
 By:
 Sturdevant, David F.
-Amaro, Florenze Kate A.
+Amaro, Florence Kate A.
 Catalan, Ma. Contessa A.
 Oblimar, Marymarc C.
