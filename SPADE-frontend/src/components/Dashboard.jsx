@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from '../api/axiosConfig';
 import myLogo from '../assets/logo.png';
+import myPFP from '../assets/pfp.png'
 
 const Dashboard = () => {
   const [logs, setLogs] = useState([]);
@@ -8,6 +9,33 @@ const Dashboard = () => {
   const [connectionStatus, setConnectionStatus] = useState('Connecting...');
   const [activeView, setActiveView] = useState('dashboard');
   const [expandedLogId, setExpandedLogId] = useState(null);
+
+  // --- HELPER FUNCTIONS ---
+  const generateDiagnosticSummary = (log) => {
+    if (log.condition_status.toLowerCase() === 'optimal') {
+      return "All readings are within optimal ranges for general crop application.";
+    }
+
+    const issues = [];
+    
+    if (log.ph_level < 6.0) issues.push("pH is too low (acidic)");
+    if (log.ph_level > 7.0) issues.push("pH is too high (alkaline)");
+
+    if (log.nitrogen_val < 50) issues.push("Nitrogen is deficient");
+    if (log.nitrogen_val > 200) issues.push("Nitrogen is excessive");
+    
+    if (log.phosphorus_val < 30) issues.push("Phosphorus is deficient");
+    if (log.phosphorus_val > 100) issues.push("Phosphorus is excessive");
+    
+    if (log.potassium_val < 40) issues.push("Potassium is deficient");
+    if (log.potassium_val > 150) issues.push("Potassium is excessive");
+
+    if (issues.length === 0) {
+      return "Suboptimal condition detected, but specific nutrient thresholds were not breached.";
+    }
+
+    return `Analysis: ${issues.join(", ")}.`;
+  };
 
   const handleAccountSettings = () => {
     setActiveView('settings');
@@ -62,7 +90,7 @@ const Dashboard = () => {
     const userId = localStorage.getItem('userId');
     const token = localStorage.getItem('accessToken'); 
     
-    const wsUrl = `ws://localhost:8000/ws/updates/${userId}/?token=${token}`;
+    const wsUrl = `ws://192.168.1.5:8000/ws/updates/${userId}/?token=${token}`;
     const socket = new WebSocket(wsUrl);
 
     socket.onopen = () => {
@@ -116,19 +144,14 @@ const Dashboard = () => {
               className="flex items-center gap-3 focus:outline-none hover:opacity-80 transition-opacity"
             >
               <div className="w-11 h-11 rounded-full bg-[#FCFAF8] border-2 border-[#528246] flex items-center justify-center text-[#4A3728] font-bold shadow-md overflow-hidden">
-                <img src={myLogo} alt="Profile" className="w-full h-full object-cover opacity-80" />
+                <img src={myPFP} alt="Profile" className="w-full h-full object-cover opacity-80" />
               </div>
               <svg className={`w-4 h-4 text-[#D9CFC4] transition-transform duration-200 ${isProfileOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
 
-            {isProfileOpen && (
-              <div className="absolute right-0 mt-3 w-56 bg-white rounded-xl shadow-xl border border-[#EFEBE4] py-2 z-50">
-                <div className="px-5 py-3 border-b border-[#EFEBE4] bg-[#FDFBF7] rounded-t-xl">
-                  <p className="text-xs text-[#7A6352] font-semibold uppercase tracking-wider">Signed in as</p>
-                  <p className="text-sm font-bold text-[#4A3728] mt-1 truncate">amaro_admin</p>
-                </div>
+            <div className={`absolute right-0 mt-3 w-56 bg-white rounded-xl shadow-xl border border-[#EFEBE4] py-2 z-50 transition-all duration-200 ease-in-out origin-top-right ${isProfileOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'}`}>
                 
                 <div className="py-2">
                   <button 
@@ -155,7 +178,6 @@ const Dashboard = () => {
                   </button>
                 </div>
               </div>
-            )}
           </div>
           
         </div>
@@ -196,53 +218,63 @@ const Dashboard = () => {
                     </tr>
                   ) : (
                     logs.map((log) => (
-                      <React.Fragment key={log.id}>
+                        <React.Fragment key={log.id}>
+                        
+                        {/* Main Clickable Row */}
                         <tr 
-                          onClick={() => setExpandedLogId(expandedLogId === log.id ? null : log.id)}
-                          className="hover:bg-[#F9F7F3] transition-colors duration-150 ease-in-out bg-white cursor-pointer"
+                            onClick={() => setExpandedLogId(expandedLogId === log.id ? null : log.id)}
+                            className="hover:bg-[#F9F7F3] transition-colors duration-150 ease-in-out bg-white cursor-pointer"
                         >
-                          <td className="py-4 px-6 whitespace-nowrap text-sm font-medium text-[#7A6352]">
+                            <td className="py-4 px-6 whitespace-nowrap text-sm font-medium text-[#7A6352]">
                             {new Date(log.timestamp).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
-                          </td>
-                          <td className="py-4 px-6 text-sm font-bold text-[#4A3728]">{log.fertilizer_type}</td>
-                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.ph_level}</td>
-                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.nitrogen_val} <span className="text-xs text-[#A49487]">ppm</span></td>
-                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.phosphorus_val} <span className="text-xs text-[#A49487]">ppm</span></td>
-                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.potassium_val} <span className="text-xs text-[#A49487]">ppm</span></td>
-                          <td className="py-4 px-6 text-sm">
+                            </td>
+                            <td className="py-4 px-6 text-sm font-bold text-[#4A3728]">{log.fertilizer_type}</td>
+                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.ph_level}</td>
+                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.nitrogen_val} <span className="text-xs text-[#A49487]">ppm</span></td>
+                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.phosphorus_val} <span className="text-xs text-[#A49487]">ppm</span></td>
+                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.potassium_val} <span className="text-xs text-[#A49487]">ppm</span></td>
+                            <td className="py-4 px-6 text-sm">
                             <span className={`px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wide flex inline-flex items-center gap-1.5
-                              ${log.condition_status.toLowerCase() === 'optimal' 
+                                ${log.condition_status.toLowerCase() === 'optimal' 
                                 ? 'bg-[#Edf3eb] text-[#3c7844] border border-[#C5DDC8]' 
                                 : 'bg-[#Fce8e8] text-[#B93838] border border-[#F3C4C4]'
-                              }`}
+                                }`}
                             >
-                              <span className={`w-1.5 h-1.5 rounded-full ${log.condition_status.toLowerCase() === 'optimal' ? 'bg-[#3c7844]' : 'bg-[#B93838]'}`}></span>
-                              {log.condition_status}
+                                <span className={`w-1.5 h-1.5 rounded-full ${log.condition_status.toLowerCase() === 'optimal' ? 'bg-[#3c7844]' : 'bg-[#B93838]'}`}></span>
+                                {log.condition_status}
                             </span>
-                          </td>
+                            </td>
                         </tr>
 
-                        {expandedLogId === log.id && (
-                          <tr className="bg-[#FCFAF8] border-b border-[#EFEBE4]">
-                            <td colSpan="7" className="p-6">
-                              <div className="flex flex-col gap-4 max-w-4xl">
-                                <h4 className="font-serif font-bold text-[#4A3728] text-lg">Test Report Details</h4>
+                        {/* Details Row - ALWAYS rendered, but height is controlled by CSS! */}
+                        <tr className="bg-[#FCFAF8]">
+                            <td colSpan="7" className="p-0 border-none"> 
+                            
+                            {/* The class toggles 'expanded' on and off based on the clicked ID */}
+                            <div className={`expandable-row-content ${expandedLogId === log.id ? 'expanded' : ''}`}>
                                 
-                                <div className={`p-4 rounded-xl border ${
-                                  log.condition_status.toLowerCase() === 'optimal' 
-                                    ? 'bg-[#F5FAF5] border-[#C5DDC8] text-[#3c7844]' 
-                                    : 'bg-[#FEF2F2] border-[#F3C4C4] text-[#B93838]'
-                                }`}>
-                                  <span className="font-bold">Recommendation: </span>
-                                  {log.condition_status.toLowerCase() === 'optimal' 
-                                    ? "Soil is in good condition. Continue regular application. Consider a phosphorus boost for root crops."
-                                    : "Action needed: Apply agricultural lime to raise pH. Retest after 2 weeks before using on crops."}
+                                {/* Inner content wrapper handles the padding and bottom border so it hides neatly */}
+                                <div className={`border-[#EFEBE4] ${expandedLogId === log.id ? 'p-6 border-b' : 'p-0 border-0'}`}>
+                                <div className="flex flex-col gap-4 max-w-4xl">
+                                    <h4 className="font-serif font-bold text-[#4A3728] text-lg">Test Report Details</h4>
+                                    
+                                    <div className={`p-4 rounded-xl border ${
+                                    log.condition_status.toLowerCase() === 'optimal' 
+                                        ? 'bg-[#F5FAF5] border-[#C5DDC8] text-[#3c7844]' 
+                                        : 'bg-[#FEF2F2] border-[#F3C4C4] text-[#B93838]'
+                                    }`}>
+                                    <span className="font-bold">Diagnostic Summary: </span>
+                                    {generateDiagnosticSummary(log)}
+                                    </div>
+                                    
                                 </div>
-                              </div>
+                                </div>
+
+                            </div>
                             </td>
-                          </tr>
-                        )}
-                      </React.Fragment>
+                        </tr>
+
+                        </React.Fragment>
                     ))
                   )}
                 </tbody>
