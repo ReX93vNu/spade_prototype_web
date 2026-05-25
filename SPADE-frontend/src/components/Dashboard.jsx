@@ -6,7 +6,7 @@ const Dashboard = () => {
     const [logs, setLogs] = useState([]);
     const [connectionStatus, setConnectionStatus] = useState('Connecting...');
 
-// 1. Fetch historical data when the page first loads
+    // 1. Fetch historical data when the page first loads
     useEffect(() => {
         const fetchLogs = async () => {
             try {
@@ -24,10 +24,13 @@ const Dashboard = () => {
         fetchLogs();
     }, []);
 
-// 2. Set up the real-time WebSocket connection
+    // 2. Set up the real-time WebSocket connection
     useEffect(() => {
         const userId = localStorage.getItem('userId');
         const token = localStorage.getItem('accessToken'); 
+
+        // for debugging
+        console.log("DEBUG WEBSOCKET CONNECTION:", { userId, token });
         
         // Appending the token to the URL so the backend can verify it
         const wsUrl = `ws://localhost:8000/ws/updates/${userId}/?token=${token}`;
@@ -38,8 +41,14 @@ const Dashboard = () => {
         };
 
         socket.onmessage = (event) => {
-            const newReading = JSON.parse(event.data);
-            // newReading directly matches the payload from consumers.py
+            const rawData = JSON.parse(event.data);
+            
+            // Check if the payload is nested inside a data attribute from views.py
+            const newReading = rawData.data ? rawData.data : rawData;
+            
+            // Debug print to view the parsed incoming live row object layout
+            console.log("LIVE WEBSOCKET PAYLOAD RECEIVED:", newReading);
+            
             setLogs((prevLogs) => [newReading, ...prevLogs]);
         };
 

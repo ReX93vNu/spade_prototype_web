@@ -2,8 +2,11 @@ import json
 from channels.generic.websocket import AsyncWebsocketConsumer
 from urllib.parse import parse_qs
 from rest_framework_simplejwt.tokens import AccessToken
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model  # Dynamic user model hook
 from channels.db import database_sync_to_async
+
+# Fetch the exact custom user model defined as 'core.User' in settings.py
+User = get_user_model()
 
 class FertilizerDataConsumer(AsyncWebsocketConsumer):
     async def connect(self):
@@ -43,9 +46,11 @@ class FertilizerDataConsumer(AsyncWebsocketConsumer):
         if not token_string:
             return None
         try:
-            # Decode token and look up User
+            # Decode token and look up custom User model entry
             validated_token = AccessToken(token_string)
             user_id = validated_token["user_id"]
             return User.objects.get(id=user_id)
-        except Exception:
+        except Exception as e:
+            # Added a print tracker here so you can catch expired token errors directly
+            print(f"JWT Consumer Verification Exception: {e}")
             return None

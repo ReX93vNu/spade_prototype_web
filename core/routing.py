@@ -1,6 +1,6 @@
-from django.urls import re_path
+from django.urls import path
 from . import consumers
 
 websocket_urlpatterns = [
-    re_path(r'ws/fertilizer/$', consumers.FertilizerDataConsumer.as_asgi()),
+    path('ws/updates/<int:user_id>/', consumers.FertilizerDataConsumer.as_asgi()),
 ]
