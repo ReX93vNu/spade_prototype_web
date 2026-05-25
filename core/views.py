@@ -14,7 +14,7 @@ class IngestReadingView(APIView):
     def get(self, request):
         try:
             # Fetch all logs tied to the logged-in user, ordered by newest first
-            logs = FertilizerLog.objects.all().order_by('-timestamp')
+            logs = FertilizerLog.objects.filter(user=request.user).order_by('-timestamp')
             
             # Map the database records into a clean JSON array structure matching your Postman/WebSocket payloads
             historical_data = []
@@ -77,6 +77,7 @@ class IngestReadingView(APIView):
                         "event_type": "new_log_entry",
                         "assigned_to": authenticated_user.username,
                         "timestamp": log.timestamp.isoformat(),
+                        "fertilizer_type": log.fertilizer_type,
                         "ph_level": log.ph_level,
                         "nitrogen_val": log.nitrogen_val,
                         "phosphorus_val": log.phosphorus_val,
@@ -126,6 +127,7 @@ class IngestReadingView(APIView):
                         "event_type": "new_log_entry",
                         "assigned_to": authenticated_user.username,
                         "timestamp": log.timestamp.isoformat(),
+                        "fertilizer_type": log.fertilizer_type,
                         "ph_level": log.ph_level,
                         "nitrogen_val": log.nitrogen_val,
                         "phosphorus_val": log.phosphorus_val,

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from '../api/axiosConfig';
 import myLogo from '../assets/logo.png';
-import myPFP from '../assets/pfp.png'
+import myPFP from '../assets/pfp.png';
 
 const Dashboard = () => {
   const [logs, setLogs] = useState([]);
@@ -9,8 +9,9 @@ const Dashboard = () => {
   const [connectionStatus, setConnectionStatus] = useState('Connecting...');
   const [activeView, setActiveView] = useState('dashboard');
   const [expandedLogId, setExpandedLogId] = useState(null);
+  const [username, setUsername] = useState('Loading...');
 
-  // --- HELPER FUNCTIONS ---
+  // --- HELPER FUNCTIONS (Your UI Logic) ---
   const generateDiagnosticSummary = (log) => {
     if (log.condition_status.toLowerCase() === 'optimal') {
       return "All readings are within optimal ranges for general crop application.";
@@ -74,6 +75,9 @@ const Dashboard = () => {
     window.location.href = '/'; 
   };
 
+  // --- USE EFFECTS ---
+  
+  // Fetch historical data
   useEffect(() => {
     const fetchLogs = async () => {
       try {
@@ -87,9 +91,21 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
+    const storedName = localStorage.getItem('username');
+    if (storedName) {
+      setUsername(storedName);
+    } else {
+      setUsername('SPADE User');
+    }
+  }, []);
+
+
+  useEffect(() => {
     const userId = localStorage.getItem('userId');
     const token = localStorage.getItem('accessToken'); 
     
+    console.log("DEBUG WEBSOCKET CONNECTION:", { userId, token });
+
     const wsUrl = `ws://192.168.1.5:8000/ws/updates/${userId}/?token=${token}`;
     const socket = new WebSocket(wsUrl);
 
@@ -98,7 +114,12 @@ const Dashboard = () => {
     };
 
     socket.onmessage = (event) => {
-      const newReading = JSON.parse(event.data);
+      const rawData = JSON.parse(event.data);
+      
+      const newReading = rawData.data ? rawData.data : rawData;
+      
+      console.log("LIVE WEBSOCKET PAYLOAD RECEIVED:", newReading);
+      
       setLogs((prevLogs) => [newReading, ...prevLogs]);
     };
 
@@ -153,6 +174,11 @@ const Dashboard = () => {
 
             <div className={`absolute right-0 mt-3 w-56 bg-white rounded-xl shadow-xl border border-[#EFEBE4] py-2 z-50 transition-all duration-200 ease-in-out origin-top-right ${isProfileOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'}`}>
                 
+                <div className="px-5 py-3 border-b border-[#EFEBE4] bg-[#FDFBF7] rounded-t-xl">
+                  <p className="text-xs text-[#7A6352] font-semibold uppercase tracking-wider">Signed in as</p>
+                  <p className="text-sm font-bold text-[#4A3728] mt-1 truncate">{username}</p>
+                </div>           
+                
                 <div className="py-2">
                   <button 
                     onClick={handleAccountSettings}
@@ -177,9 +203,8 @@ const Dashboard = () => {
                     Log Out
                   </button>
                 </div>
-              </div>
+            </div>
           </div>
-          
         </div>
       </header>
 
@@ -218,63 +243,63 @@ const Dashboard = () => {
                     </tr>
                   ) : (
                     logs.map((log) => (
-                        <React.Fragment key={log.id}>
+                      <React.Fragment key={log.id}>
                         
                         {/* Main Clickable Row */}
                         <tr 
-                            onClick={() => setExpandedLogId(expandedLogId === log.id ? null : log.id)}
-                            className="hover:bg-[#F9F7F3] transition-colors duration-150 ease-in-out bg-white cursor-pointer"
+                          onClick={() => setExpandedLogId(expandedLogId === log.id ? null : log.id)}
+                          className="hover:bg-[#F9F7F3] transition-colors duration-150 ease-in-out bg-white cursor-pointer"
                         >
-                            <td className="py-4 px-6 whitespace-nowrap text-sm font-medium text-[#7A6352]">
+                          <td className="py-4 px-6 whitespace-nowrap text-sm font-medium text-[#7A6352]">
                             {new Date(log.timestamp).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
-                            </td>
-                            <td className="py-4 px-6 text-sm font-bold text-[#4A3728]">{log.fertilizer_type}</td>
-                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.ph_level}</td>
-                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.nitrogen_val} <span className="text-xs text-[#A49487]">ppm</span></td>
-                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.phosphorus_val} <span className="text-xs text-[#A49487]">ppm</span></td>
-                            <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.potassium_val} <span className="text-xs text-[#A49487]">ppm</span></td>
-                            <td className="py-4 px-6 text-sm">
+                          </td>
+                          <td className="py-4 px-6 text-sm font-bold text-[#4A3728]">{log.fertilizer_type}</td>
+                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.ph_level}</td>
+                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.nitrogen_val} <span className="text-xs text-[#A49487]">ppm</span></td>
+                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.phosphorus_val} <span className="text-xs text-[#A49487]">ppm</span></td>
+                          <td className="py-4 px-6 text-sm font-semibold text-[#4A3728]">{log.potassium_val} <span className="text-xs text-[#A49487]">ppm</span></td>
+                          <td className="py-4 px-6 text-sm">
                             <span className={`px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wide flex inline-flex items-center gap-1.5
-                                ${log.condition_status.toLowerCase() === 'optimal' 
+                              ${log.condition_status.toLowerCase() === 'optimal' 
                                 ? 'bg-[#Edf3eb] text-[#3c7844] border border-[#C5DDC8]' 
                                 : 'bg-[#Fce8e8] text-[#B93838] border border-[#F3C4C4]'
-                                }`}
+                              }`}
                             >
-                                <span className={`w-1.5 h-1.5 rounded-full ${log.condition_status.toLowerCase() === 'optimal' ? 'bg-[#3c7844]' : 'bg-[#B93838]'}`}></span>
-                                {log.condition_status}
+                              <span className={`w-1.5 h-1.5 rounded-full ${log.condition_status.toLowerCase() === 'optimal' ? 'bg-[#3c7844]' : 'bg-[#B93838]'}`}></span>
+                              {log.condition_status}
                             </span>
-                            </td>
+                          </td>
                         </tr>
 
                         {/* Details Row - ALWAYS rendered, but height is controlled by CSS! */}
                         <tr className="bg-[#FCFAF8]">
-                            <td colSpan="7" className="p-0 border-none"> 
+                          <td colSpan="7" className="p-0 border-none"> 
                             
                             {/* The class toggles 'expanded' on and off based on the clicked ID */}
                             <div className={`expandable-row-content ${expandedLogId === log.id ? 'expanded' : ''}`}>
-                                
-                                {/* Inner content wrapper handles the padding and bottom border so it hides neatly */}
-                                <div className={`border-[#EFEBE4] ${expandedLogId === log.id ? 'p-6 border-b' : 'p-0 border-0'}`}>
+                              
+                              {/* Inner content wrapper handles the padding and bottom border so it hides neatly */}
+                              <div className={`border-[#EFEBE4] ${expandedLogId === log.id ? 'p-6 border-b' : 'p-0 border-0'}`}>
                                 <div className="flex flex-col gap-4 max-w-4xl">
-                                    <h4 className="font-serif font-bold text-[#4A3728] text-lg">Test Report Details</h4>
-                                    
-                                    <div className={`p-4 rounded-xl border ${
-                                    log.condition_status.toLowerCase() === 'optimal' 
-                                        ? 'bg-[#F5FAF5] border-[#C5DDC8] text-[#3c7844]' 
-                                        : 'bg-[#FEF2F2] border-[#F3C4C4] text-[#B93838]'
-                                    }`}>
+                                  <h4 className="font-serif font-bold text-[#4A3728] text-lg">Test Report Details</h4>
+                                  
+                                  <div className={`p-4 rounded-xl border ${
+                                  log.condition_status.toLowerCase() === 'optimal' 
+                                      ? 'bg-[#F5FAF5] border-[#C5DDC8] text-[#3c7844]' 
+                                      : 'bg-[#FEF2F2] border-[#F3C4C4] text-[#B93838]'
+                                  }`}>
                                     <span className="font-bold">Diagnostic Summary: </span>
                                     {generateDiagnosticSummary(log)}
-                                    </div>
-                                    
+                                  </div>
+                                  
                                 </div>
-                                </div>
+                              </div>
 
                             </div>
-                            </td>
+                          </td>
                         </tr>
 
-                        </React.Fragment>
+                      </React.Fragment>
                     ))
                   )}
                 </tbody>
