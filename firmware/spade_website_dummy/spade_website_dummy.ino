@@ -1,19 +1,23 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
+#include <WiFiClientSecure.h> 
 
 // local network info
 const char* ssid = "wifi name";           // local Wi-Fi Name
-const char* password = "wifi pass";   // local Wi-Fi Password. dont forget to clear unless u wanna leak ur info
+const char* password = "wifi pass";       // local Wi-Fi Password. dont forget to clear unless u wanna leak ur info
 
-// machine LAN IPv4 Address
-const char* token_url = "http://192.168.x.x:8000/api/token/";
-const char* ingest_url = "http://192.168.x.x:8000/api/ingest-reading/";
+
+const char* token_url = "https://spade-prototype-web.onrender.com/api/token/";
+const char* ingest_url = "https://spade-prototype-web.onrender.com/api/ingest-reading/";
 
 // backend auth
 const char* api_username = "username";
 const char* api_password = "userpass";
 String jwt_access_token = ""; // cache string container for the token
+
+// to handle Render's SSL requirements
+WiFiClientSecure secureClient; 
 
 // offline recording
 struct SensorRecord {
@@ -30,6 +34,9 @@ int recordCount = 0;              // pointer tracking amount of logs saved
 void setup() {
     Serial.begin(115200);
     
+    // 4. Instruct the ESP32 to bypass strict SSL certificate fingerprint checking
+    secureClient.setInsecure(); 
+    
     WiFi.begin(ssid, password);
     Serial.print("Connecting to Wi-Fi network");
     while (WiFi.status() != WL_CONNECTED) {
@@ -40,7 +47,7 @@ void setup() {
 }
 
 void loop() {
-    // accumulates simulated readings till cache is full (10 records). Simulated readings for now as we dont have any sensors for actual ones yet
+    // accumulates simulated readings till cache is full (10 records). 
     if (recordCount < MAX_RECORDS) {
 
         buffer[recordCount].ph = 6.5 + (random(-2, 3) / 10.0);
@@ -80,7 +87,9 @@ void loop() {
 // for JWT Authentication Token extraction
 String getJWTToken() {
     HTTPClient http;
-    http.begin(token_url);
+    
+    // 5. Pass the secureClient wrapper into the http begin request
+    http.begin(secureClient, token_url); 
     http.addHeader("Content-Type", "application/json");
 
     // unified Version 6 & 7 compatible Json Document format
@@ -111,7 +120,9 @@ String getJWTToken() {
 // packages the struct array into a single JSON list and pushes to backend
 bool sendBulkPayload(String token) {
     HTTPClient http;
-    http.begin(ingest_url);
+    
+    // 6. Pass the secureClient wrapper into the ingest request
+    http.begin(secureClient, ingest_url); 
     
     // inject headers matching Django REST Framework class-based permission 
     http.addHeader("Content-Type", "application/json");

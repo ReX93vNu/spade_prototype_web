@@ -3,6 +3,12 @@ Just a group of students' proj for their subj
 
 We're dying
 
+Live deployment links:
+Frontend: https://spade-prototype-web-1.onrender.com/
+Backend: https://spade-prototype-web.onrender.com/
+
+Gdrive presentation video link: https://drive.google.com/drive/folders/1pS6LU5AAj0AXqlUw5L5kfAWoI1PBTRQh?usp=sharing
+
 Running the backend server: 
 1. in terminal, open the project folder.
 2. Run the backend in a venv environment. 
