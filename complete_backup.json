@@ -1,0 +1,7018 @@
+[
+{
+    "model": "core.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$NRAREOp90fhFjS6yTFDEQI$DDthX5U4+z2ilAkmD5TCcsAg8OaZQT1N0M+AErDkrGM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-05-24T11:26:52.808Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$s2OvAULNpCE8ijXdwsj3fE$6QBrDt5irV9I80VfUainhgqMsTjmtup2q9AYKEREr3M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-05-24T12:58:17.669Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$j2cwj2j3LE9kRzYsnfAcXO$1voia8A6DFvtSrPTkRxtby9a0HbzhuYZjyywixnXp7o=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "node_test",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-05-24T13:00:34.411Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$6oB7de9RJwRWnE9aOdqGFl$nWE1u7gHeNYgPixLiYrB0tKc/PBdlFXrehbfy9zwuDs=",
+        "last_login": "2026-05-24T13:14:59.729Z",
+        "is_superuser": true,
+        "username": "core_admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-05-24T13:14:41.944Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "fertilizer_type": "Postman Validated Batch",
+        "timestamp": "2026-05-24T11:27:17.614Z",
+        "ph_level": 6.8,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 55.0,
+        "potassium_val": 220.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 2,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "JWT Standard Verification",
+        "timestamp": "2026-05-24T13:17:05.820Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 142.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 215.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Offline Cache 1",
+        "timestamp": "2026-05-24T15:23:02.199Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 142.5,
+        "phosphorus_val": 53.0,
+        "potassium_val": 212.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 4,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Offline Cache 2",
+        "timestamp": "2026-05-24T15:23:02.216Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.5,
+        "potassium_val": 208.5,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 5,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Offline Cache 1",
+        "timestamp": "2026-05-24T16:38:31.350Z",
+        "ph_level": 5.3,
+        "nitrogen_val": 142.5,
+        "phosphorus_val": 53.0,
+        "potassium_val": 212.0,
+        "condition_status": "Suboptimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 6,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Offline Cache 2",
+        "timestamp": "2026-05-24T16:38:31.365Z",
+        "ph_level": 1.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.5,
+        "potassium_val": 208.5,
+        "condition_status": "Suboptimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 7,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.224Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 8,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.233Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 9,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.238Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 10,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.244Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 11,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.258Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 12,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.274Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 13,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.290Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 14,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.304Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 15,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.319Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 16,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:09.334Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 17,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.727Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 18,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.735Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 19,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.740Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 20,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.744Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 21,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.748Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 22,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.753Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 23,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.758Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 24,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.762Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 25,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.766Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 26,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:42:39.780Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 27,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.086Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 28,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.095Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 29,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.099Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 30,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.111Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 31,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.125Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 32,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.139Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 33,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.154Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 34,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.169Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 35,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.184Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 36,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:10.199Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 37,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.592Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 38,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.607Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 39,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.620Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 40,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.637Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 41,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.652Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 42,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.666Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 43,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.681Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 44,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.694Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 45,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.708Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 46,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:43:40.722Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 47,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.110Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 48,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.116Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 49,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.121Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 50,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.137Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 51,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.152Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 52,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.169Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 53,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.184Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 54,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.199Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 55,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.213Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 56,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:11.227Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 57,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.585Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 58,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.599Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 59,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.613Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 60,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.626Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 61,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.640Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 62,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.654Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 63,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.668Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 64,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.682Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 65,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.696Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 66,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:44:41.709Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 67,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.139Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 68,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.153Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 69,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.167Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 70,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.181Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 71,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.194Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 72,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.207Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 73,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.222Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 74,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.234Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 75,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.251Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 76,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:12.265Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 77,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.616Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 78,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.632Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 79,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.646Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 80,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.662Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 81,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.676Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 82,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.691Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 83,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.705Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 84,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.720Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 85,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.735Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 86,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:45:42.749Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 87,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.171Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 88,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.185Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 89,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.200Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 90,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.215Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 91,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.229Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 92,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.243Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 93,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.257Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 94,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.271Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 95,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.286Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 96,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T16:46:13.301Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 97,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.563Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 98,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.579Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 99,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.594Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 100,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.609Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 101,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.625Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 102,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.641Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 103,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.656Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 104,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.672Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 105,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.685Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 106,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:24.698Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 107,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.052Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 108,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.065Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 109,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.079Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 110,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.094Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 111,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.109Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 112,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.124Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 113,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.142Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 114,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.156Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 115,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.172Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 116,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:17:55.186Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 117,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.594Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 118,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.603Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 119,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.608Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 120,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.612Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 121,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.618Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 122,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.632Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 123,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.646Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 124,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.661Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 125,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.676Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 126,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:25.689Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 127,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:55.988Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 128,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:55.996Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 129,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.001Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 130,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.006Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 131,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.010Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 132,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.015Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 133,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.028Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 134,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.043Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 135,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.057Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 136,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T17:18:56.071Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 137,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.081Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 138,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.101Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 139,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.116Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 140,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.131Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 141,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.146Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 142,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.160Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 143,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.175Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 144,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.190Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 145,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.204Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 146,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:04.218Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 147,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.594Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 148,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.602Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 149,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.607Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 150,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.613Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 151,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.619Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 152,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.624Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 153,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.630Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 154,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.636Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 155,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.643Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 156,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:48:34.649Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 157,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:04.974Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 158,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:04.983Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 159,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:04.988Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 160,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:04.993Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 161,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:04.998Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 162,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:05.013Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 163,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:05.027Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 164,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:05.040Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 165,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:05.056Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 166,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T19:49:05.069Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 167,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.301Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 168,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.317Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 169,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.331Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 170,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.346Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 171,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.352Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 172,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.358Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 173,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.365Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 174,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.372Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 175,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.378Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 176,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:06.383Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 177,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.720Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 178,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.733Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 179,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.747Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 180,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.760Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 181,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.774Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 182,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.788Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 183,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.805Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 184,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.818Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 185,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.832Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 186,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:03:36.845Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 187,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.235Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 188,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.251Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 189,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.267Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 190,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.281Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 191,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.296Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 192,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.310Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 193,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.325Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 194,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.338Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 195,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.352Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 196,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-24T20:04:07.370Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 197,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.902Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 198,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.911Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 199,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.925Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 200,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.938Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 201,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.954Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 202,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.966Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 203,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.979Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 204,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:31.994Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 205,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:32.007Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 206,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:26:32.020Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 207,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.377Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 208,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.383Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 209,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.389Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 210,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.394Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 211,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.400Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 212,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.406Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 213,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.412Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 214,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.417Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 215,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.422Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 216,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:02.428Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 217,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.729Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 218,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.742Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 219,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.756Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 220,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.769Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 221,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.783Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 222,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.796Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 223,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.810Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 224,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.825Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 225,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.839Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 226,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:27:32.852Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 227,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.147Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 228,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.152Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 229,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.158Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 230,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.163Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 231,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.168Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 232,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.173Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 233,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.178Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 234,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.183Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 235,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.187Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 236,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:28:03.193Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 237,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.789Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 238,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.797Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 239,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.802Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 240,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.813Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 241,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.827Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 242,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.840Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 243,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.854Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 244,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.866Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 245,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.880Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 246,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:12.894Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 247,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.304Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 248,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.314Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 249,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.319Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 250,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.324Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 251,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.330Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 252,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.335Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 253,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.340Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 254,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.351Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 255,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.364Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 256,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:35:43.378Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 257,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.331Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 258,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.346Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 259,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.360Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 260,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.375Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 261,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.388Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 262,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.403Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 263,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.417Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 264,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.430Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 265,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.444Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 266,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:42:59.458Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 267,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.461Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 268,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.470Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 269,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.480Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 270,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.494Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 271,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.509Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 272,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.524Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 273,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.539Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 274,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.553Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 275,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.567Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 276,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T06:52:53.581Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 277,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.171Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 278,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.180Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 279,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.185Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 280,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.190Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 281,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.195Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 282,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.211Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 283,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.226Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 284,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.239Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 285,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.254Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 286,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:11:43.268Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 287,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.681Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 288,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.690Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 289,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.695Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 290,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.700Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 291,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.709Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 292,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.715Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 293,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.721Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 294,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.727Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 295,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.744Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 296,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:13.758Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 297,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.099Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 298,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.109Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 299,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.114Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 300,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.123Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 301,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.138Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 302,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.153Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 303,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.168Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 304,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.183Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 305,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.198Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 306,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:12:44.213Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 307,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.613Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 308,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.619Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 309,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.626Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 310,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.633Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 311,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.640Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 312,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.646Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 313,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.660Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 314,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.675Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 315,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.689Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 316,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:14.704Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 317,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.028Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 318,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.037Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 319,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.053Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 320,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.070Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 321,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.085Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 322,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.099Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 323,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.115Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 324,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.130Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 325,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.148Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 326,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:13:45.162Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 327,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.536Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 328,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.544Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 329,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.550Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 330,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.555Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 331,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.560Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 332,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.565Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 333,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.570Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 334,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.575Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 335,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.580Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 336,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:14:15.590Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 337,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.598Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 338,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.606Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 339,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.621Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 340,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.635Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 341,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.653Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 342,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.669Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 343,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.684Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 344,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.701Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 345,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.718Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 346,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:21:11.735Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 347,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.554Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 348,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.568Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 349,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.582Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 350,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.596Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 351,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.611Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 352,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.625Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 353,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.640Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 354,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.653Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 355,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.667Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 356,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:20.684Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 357,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.209Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 358,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.223Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 359,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.237Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 360,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.252Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 361,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.267Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 362,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.282Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 363,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.296Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 364,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.310Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 365,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.324Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 366,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:27:51.339Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 367,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.718Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 368,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.727Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 369,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.733Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 370,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.739Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 371,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.744Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 372,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.749Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 373,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.765Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 374,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.780Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 375,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.795Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 376,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:21.810Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 377,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.343Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 378,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.357Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 379,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.371Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 380,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.388Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 381,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.402Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 382,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.417Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 383,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.432Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 384,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.447Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 385,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.463Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 386,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:28:52.477Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 387,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.874Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 388,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.884Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 389,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.891Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 390,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.897Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 391,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.903Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 392,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.909Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 393,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.924Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 394,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.938Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 395,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.953Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 396,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:22.967Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 397,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.375Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 398,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.384Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 399,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.399Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 400,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.414Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 401,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.429Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 402,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.446Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 403,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.461Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 404,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.476Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 405,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.490Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 406,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:29:53.506Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 407,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.582Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 408,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.591Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 409,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.596Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 410,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.601Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 411,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.607Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 412,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.620Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 413,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.634Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 414,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.649Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 415,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.664Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 416,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T07:39:43.681Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 417,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.922Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 418,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.930Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 419,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.935Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 420,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.940Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 421,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.949Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 422,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.954Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 423,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.959Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 424,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.964Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 425,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.975Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 426,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T11:37:57.990Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 427,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.507Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 428,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.521Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 429,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.536Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 430,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.551Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 431,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.566Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 432,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.581Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 433,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.595Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 434,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.611Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 435,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.625Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 436,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:41:38.639Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 437,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.155Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 438,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.171Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 439,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.185Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 440,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.199Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 441,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.213Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 442,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.227Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 443,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.242Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 444,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.256Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 445,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.271Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 446,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:09.285Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 135.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 447,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.675Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 448,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.684Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 449,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.689Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 450,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.694Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 451,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.699Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 452,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.704Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 453,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.709Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 454,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.714Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 455,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.727Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 456,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:42:39.742Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 457,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.083Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 458,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.092Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 459,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.097Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 460,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.102Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 461,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.107Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 132.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 462,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.112Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 463,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.117Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 464,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.122Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 465,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.128Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 466,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:10.133Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 467,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.468Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 468,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.483Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 205.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 469,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.499Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 470,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.513Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 471,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.529Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 200.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 472,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.543Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 473,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.558Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 474,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.574Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 475,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.592Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 476,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:43:40.607Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 140.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 477,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.019Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 478,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.037Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 479,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.057Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 480,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.075Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 481,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.094Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 210.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 482,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.112Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 138.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 483,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.132Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 484,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.153Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 131.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 206.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 485,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.173Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 486,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T14:44:11.194Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 137.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 201.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 487,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.540Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 488,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.558Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 209.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 489,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.573Z",
+        "ph_level": 6.5,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 203.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 490,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.588Z",
+        "ph_level": 6.4,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 491,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.604Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 51.0,
+        "potassium_val": 202.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 492,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.618Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 130.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 208.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 493,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.632Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 133.0,
+        "phosphorus_val": 50.0,
+        "potassium_val": 204.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 494,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.647Z",
+        "ph_level": 6.3,
+        "nitrogen_val": 136.0,
+        "phosphorus_val": 54.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 495,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.660Z",
+        "ph_level": 6.6,
+        "nitrogen_val": 139.0,
+        "phosphorus_val": 53.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+},
+{
+    "model": "core.fertilizerlog",
+    "pk": 496,
+    "fields": {
+        "user": 3,
+        "fertilizer_type": "ESP32 Host Bulk Node",
+        "timestamp": "2026-05-25T15:09:42.676Z",
+        "ph_level": 6.7,
+        "nitrogen_val": 134.0,
+        "phosphorus_val": 52.0,
+        "potassium_val": 207.0,
+        "condition_status": "Optimal"
+    }
+}
+]
