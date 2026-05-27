@@ -41,7 +41,7 @@ ESP32_API_KEY = env('ESP32_API_KEY')
 SECRET_KEY = 'django-insecure-1*$+ad=$o77q#$*t13qciaisf)%aq*sxvrx9utq_df)7fxc@nj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
