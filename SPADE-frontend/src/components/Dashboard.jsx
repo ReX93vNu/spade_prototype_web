@@ -101,7 +101,7 @@ const Dashboard = () => {
     
     console.log("DEBUG WEBSOCKET CONNECTION:", { userId, token });
 
-    const wsUrl = `ws://192.168.1.5:8000/ws/updates/${userId}/?token=${token}`;
+    const wsUrl = `wss://spade-prototype-web.onrender.com/ws/updates/${userId}/?token=${token}`;
     const socket = new WebSocket(wsUrl);
 
     socket.onopen = () => {
