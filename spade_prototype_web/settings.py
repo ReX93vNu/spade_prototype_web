@@ -44,6 +44,9 @@ SECRET_KEY = 'django-insecure-1*$+ad=$o77q#$*t13qciaisf)%aq*sxvrx9utq_df)7fxc@nj
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'https://spade-prototype-web.onrender.com',
+]
 
 
 # Application definition
