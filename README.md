@@ -24,6 +24,35 @@ Running the frontend server:
 4. use npm run dev to run the frontend.
 
 
+Changes done for deployment to Render:
+
+1. Backend Deployment (Django on Render)
+- Data Prep: Exported local database to a JSON file using: python manage.py dumpdata core auth --exclude=auth.Permission --exclude=contenttypes --indent 4 > complete_backup.json
+- Render Setup: Create a New Web Service on Render and connect the GitHub repo.
+
+Web Service configuration:
+- Build Command: pip install -r requirements.txt && python manage.py migrate && python manage.py loaddata complete_backup.json
+- Environment Variables: Add DEBUG and set its value to False.
+
+2. Frontend Deployment (React Vite on Render)
+- Code Revisions for deployment: Changed URLs in Dashboard.jsx and axiosConfig.js to the live backend link (https:// and wss://).
+- Render Setup: Create a New Static Site on Render.
+
+Static Website configuration
+- Root Directory: Set to SPADE-frontend
+- Build Command: npm install; npm run build
+- Publish Directory: Set to dist.
+- Routing Rule: Added a Rewrite rule from /* to /index.html to prevent 404 errors on page refresh.
+
+3. ESP32 Cloud Connection
+- Secure Library: Include <WiFiClientSecure.h> at the top of the sketch.
+- Update URLs: Change token_url and ingest_url to the live https:// endpoints.
+- Initialize: Add "WiFiClientSecure secureClient;" globally.
+- Disable Strict Checking: Add "secureClient.setInsecure();" inside setup().
+- Route Requests: Update HTTPClient to use the wrapper: http.begin(secureClient, token_url);
+
+These changes enable the esp32 to connect securely to the live system.
+
 By:
 Sturdevant, David F.
 Amaro, Florence Kate A.
