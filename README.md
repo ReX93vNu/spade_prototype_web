@@ -4,13 +4,9 @@ Just a group of students' proj for their subj
 We're dying
 
 # Test accounts:
-1.
-username: test
-password: test12345678
+1. username: test | password: test12345678
 
-2.
-username: node_test
-password: node12345678
+2. username: node_test | password: node12345678
 
 forgot the admin and other test account credentials. rip
 
