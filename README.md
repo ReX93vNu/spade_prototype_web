@@ -3,12 +3,24 @@ Just a group of students' proj for their subj
 
 We're dying
 
-Live deployment links:
+# Test accounts:
+1.
+username: test
+password: test12345678
+
+2.
+username: node_test
+password: node12345678
+
+forgot the admin and other test account credentials. rip
+
+# Live deployment links:
 Frontend: https://spade-prototype-web-1.onrender.com/
 Backend: https://spade-prototype-web.onrender.com/
 
 Gdrive presentation video link: https://drive.google.com/drive/folders/1pS6LU5AAj0AXqlUw5L5kfAWoI1PBTRQh?usp=sharing
 
+# Local deployment used for testing and development.
 Running the backend server: 
 1. in terminal, open the project folder.
 2. Run the backend in a venv environment. 
@@ -24,7 +36,7 @@ Running the frontend server:
 4. use npm run dev to run the frontend.
 
 
-Changes done for deployment to Render:
+# Changes done for deployment to Render:
 
 1. Backend Deployment (Django on Render)
 - Data Prep: Exported local database to a JSON file using: python manage.py dumpdata core auth --exclude=auth.Permission --exclude=contenttypes --indent 4 > complete_backup.json
@@ -53,6 +65,7 @@ Static Website configuration
 
 These changes enable the esp32 to connect securely to the live system.
 
+# Credits
 By:
 Sturdevant, David F.
 Amaro, Florence Kate A.
